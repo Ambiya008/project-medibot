@@ -3,7 +3,7 @@ Medibot: AI-Powered Medical Chatbot
    
 Medibot is an AI-powered medical chatbot designed to provide accurate health information and support. It leverages advanced language models to process user queries, retrieve relevant medical data, and generate responses. The chatbot integrates LangChain, Hugging Face models, and FAISS for document search and retrieval.
 
-3. Features
+2. Features
    
 Medical Document Search: Extracts information from PDF medical documents.
 Intelligent Query Processing: Uses Hugging Face sentence transformers for embeddings.
@@ -11,7 +11,7 @@ Memory Support: Integrates FAISS to create and store vectorized embeddings for f
 Streamlit Interface: A user-friendly web application for interaction with the chatbot.
 Customizable Knowledge Base: Easily add new documents to expand the chatbot's knowledge.
 
-5. Prerequisites
+3. Prerequisites
  
 Before you begin, ensure you have the following installed:
 
@@ -25,7 +25,7 @@ Hugging Face Access Token: Required to access Hugging Face models.
 
 
 
-8. Installation
+4. Installation
    
 Follow these steps to set up the project locally:
 
@@ -47,7 +47,7 @@ Install the required dependencies:
 
 pip install -r requirements.txt
 
-10. Configuration
+5. Configuration
 Create a .env file in the root directory to store sensitive information:
 
 makefile
@@ -59,21 +59,21 @@ Ensure .env is added to .gitignore to prevent pushing it to GitHub.
 
 
 
-13. Running the Application
-14. 
+6. Running the Application
+
 Run the following command to start the chatbot interface:
 
 streamlit run medibot.py
 
 Access the application at http://localhost:8501.
 
-16. Project Structure
+7. Project Structure
     
 The project directory is organized as follows:
 
 ![Screenshot (118)](https://github.com/user-attachments/assets/c14157df-0344-4d43-ba63-6f73cc2cd172)
 
-18. Technology Used
+8. Technology Used
     
 Frontend
 
@@ -92,7 +92,7 @@ FAISS: For efficient vector search and retrieval.
 
 
 
-20. Running the Application
+9. Running the Application
     
 Run the following command to start the chatbot interface:
 
