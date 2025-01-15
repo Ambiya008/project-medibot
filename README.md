@@ -2,22 +2,21 @@ Medibot: AI-Powered Medical Chatbot
 1. Project Details
 Medibot is an AI-powered medical chatbot designed to provide accurate health information and support. It leverages advanced language models to process user queries, retrieve relevant medical data, and generate responses. The chatbot integrates LangChain, Hugging Face models, and FAISS for document search and retrieval.
 
- Features
+2. Features
 Medical Document Search: Extracts information from PDF medical documents.
 Intelligent Query Processing: Uses Hugging Face sentence transformers for embeddings.
 Memory Support: Integrates FAISS to create and store vectorized embeddings for fast retrieval.
 Streamlit Interface: A user-friendly web application for interaction with the chatbot.
 Customizable Knowledge Base: Easily add new documents to expand the chatbot's knowledge.
-
-Prerequisites
+3. Prerequisites
 Before you begin, ensure you have the following installed:
 
 Python 3.9+
 Git: For version control.
 Pip: Python package manager.
 Hugging Face Access Token: Required to access Hugging Face models.
-
-Installation
+Render Account (if deploying on Render).
+4. Installation
 Follow these steps to set up the project locally:
 
 Clone the repository:
@@ -44,8 +43,11 @@ makefile
 Copy code
 HF_ACCESS_TOKEN=your_hugging_face_access_token
 Ensure .env is added to .gitignore to prevent pushing it to GitHub.
+6. Dialogflow Setup (Optional)
+If you're integrating Dialogflow for additional features:
 
-Running the Application
+
+7. Running the Application
 Run the following command to start the chatbot interface:
 
 bash
@@ -80,6 +82,20 @@ Python 3.9+: For core logic.
 LangChain: To manage interaction between the chatbot and knowledge base.
 Hugging Face Transformers: For embeddings using pre-trained language models.
 FAISS: For efficient vector search and retrieval.
+
+
+
+
+
+
+
+6. Running the Application
+Run the following command to start the chatbot interface:
+
+bash
+Copy code
+streamlit run medibot.py
+Access the application at http://localhost:8501.
 
 some screenshots of the project![Screenshot (117)](https://github.com/user-attachments/assets/99901798-3ea7-4b7b-8711-b0d271565818)
 ![Screenshot (116)](https://github.com/user-attachments/assets/b1355fc8-0301-47d5-a9bc-16c39e9ba8d8)
